@@ -20,9 +20,9 @@ import UIKit
 
 
 // Первое уравнение
-var a : Double = 19
-var b : Double = 15
-var c : Double = -34
+let a : Double = 19
+let b : Double = 15
+let c : Double = -34
 
 // Второе уравнение
 // let a : Double = 341
@@ -33,11 +33,11 @@ var x1 : Double = 0
 var x2 : Double = 0
 
 // Если a + b + c = 0, то x1 = 1, x2 = c/a
-var option1  = a + b + c
+let option1  = a + b + c
 
 // Если a - b + c = 0 или a + c = b, то x1 = -1, x2 = -c/a
-var option2 = a - b + c
-var option2a = a + c
+let option2 = a - b + c
+let option2a = a + c
 
 // Здесь бы хорошо добавить функцию, но я пока не умею
 if option1 == 0 {
@@ -69,15 +69,15 @@ else if option2 == 0 || option2a == b {
 // p = 20.60
 // c = 8.60
 
-var a2 : Double = 5
-var b2 : Double = 7
+let a2 : Double = 5
+let b2 : Double = 7
 
-var s2 = ((a2 * b2) / 2)
+let s2 = ((a2 * b2) / 2)
 
-var c2_1 = ((a2*a2) + (b2*b2))
-var c2 = c2_1.squareRoot()  // нашел в интернете
+let c2_1 = ((a2*a2) + (b2*b2))
+let c2 = c2_1.squareRoot()  // нашел в интернете
 
-var p2 = a2 + b2 + c2
+let p2 = a2 + b2 + c2
 
 print ("Задача 2 \n Площадь равна ", s2, "\n Периметр равен ", p2, "\n Гипотенуза равна ", c2, "\n")
 
@@ -86,17 +86,17 @@ print ("Задача 2 \n Площадь равна ", s2, "\n Периметр 
 
 // 3. * Пользователь вводит сумму вклада в банк и годовой процент. Найти сумму вклада через 5 лет.
 
-var DepositAmount : Double = 1000000
-var DepositAmountNew = DepositAmount
-var DepositPercentInput : Double = 10
-var DepositPercent = 1 + (DepositPercentInput / 100)
+var depositAmount : Double = 1000000
+var depositAmountNew = depositAmount
+let depositPercentInput : Double = 10
+let depositPercent = 1 + (depositPercentInput / 100)
 
 // Чисто взял и Java Script и убрал то, что не работает в Swift
 var n = 2020
 while (n <= 2025) {
-    var DepositResult = DepositAmountNew * DepositPercent
-    DepositAmountNew = DepositResult
+    let depositResult = depositAmountNew * depositPercent
+    depositAmountNew = depositResult
     n = n + 1
 }
 
-print ("Задача 3 \n При вкладе ", DepositAmount, " руб. сумма вклада через 5 лет будет ", DepositAmountNew, "руб. \n")
+print ("Задача 3 \n При вкладе ", depositAmount, " руб. сумма вклада через 5 лет будет ", depositAmountNew, "руб. \n")
